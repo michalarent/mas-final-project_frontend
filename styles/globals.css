@@ -1,0 +1,32 @@
+/* body {
+  background: rgb(40, 41, 45);
+} */
+/* 
+button[type="submit"],
+input[type="submit"] {
+  background: #ec5990;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+} */
+
+.MuiOutlinedInput-input {
+  height: 8rem !important;
+}
+
+body {
+  margin: 0;
+}
+
+.MuiDrawer-paper {
+  background-color: white !important;
+}
+
+.MuiListItemText-primary {
+  color: black;
+}

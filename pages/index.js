@@ -1,13 +1,11 @@
-import { Animated, Basic, bounce, Combined } from '../shared/styles'
+import AlbumComponent from "../components/AlbumComponent";
+import Navigation from "../components/Navigation";
 
 const Home = () => (
-  <div>
-    <Basic>Cool Styles</Basic>
-    <Combined>
-      With <code>:hover</code>.
-    </Combined>
-    <Animated animation={bounce}>Let's bounce.</Animated>
-  </div>
-)
+  <>
+    <Navigation />
+    <AlbumComponent />
+  </>
+);
 
-export default Home
+export default Home;

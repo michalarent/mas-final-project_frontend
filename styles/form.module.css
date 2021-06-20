@@ -1,0 +1,99 @@
+.form {
+  padding-top: 5rem;
+  padding-left: 10rem;
+  max-width: 80vw;
+  margin: 0 0;
+}
+
+.formModal {
+  max-width: 40vw;
+}
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.page {
+  background-color: rgba(0, 0, 0, 0.911);
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.pageModal {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.page > p {
+  color: #bf1650;
+  text-align: center;
+}
+
+.label,
+.section > .label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.radioLabel {
+  line-height: 0;
+  text-align: left;
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.imageUploadButton {
+  margin-top: 20px !important;
+}
+
+.uploadedImage {
+  width: 100%;
+  height: 429px;
+  border: 0.02px solid black;
+  border-color: rgba(255, 255, 255, 0.276);
+  object-fit: cover;
+}
+
+.songRow {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  border-bottom: 1px white solid;
+
+  padding-bottom: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.uploadedImage:hover {
+  border-color: rgba(255, 255, 255, 0.856);
+}
+
+.imageContainer {
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
+}

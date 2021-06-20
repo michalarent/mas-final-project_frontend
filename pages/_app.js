@@ -1,8 +1,8 @@
-import { globalStyles } from '../shared/styles'
+import '../styles/globals.css'
 
 const App = ({ Component, pageProps }) => (
   <>
-    {globalStyles}
+    
     <Component {...pageProps} />
   </>
 )
