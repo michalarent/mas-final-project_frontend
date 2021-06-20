@@ -383,7 +383,7 @@ export default function BlankForm() {
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
           <Grid container>
             <Grid container xs={12} md={4} lg={2}>
-              <Grid item xs={4} md={12}>
+              <Grid item xs={4} md={10} lg={10}>
                 <section className={styles.section}>
                   <label className={styles.label}>Is the album explicit?</label>
                   <Controller
@@ -442,7 +442,7 @@ export default function BlankForm() {
               </Grid>
             </Grid>
             <Grid container xs={12} md={7} lg={5}>
-              <Grid item md={12} lg={10}>
+              <Grid item xs={12} md={12} lg={10}>
                 <section className={styles.section}>
                   <label className={styles.label}>
                     What is the album title?
@@ -468,7 +468,7 @@ export default function BlankForm() {
                   />
                 </section>
               </Grid>
-              <Grid item md={12} lg={10}>
+              <Grid item xs={12} md={12} lg={10}>
                 <section className={styles.section}>
                   <label className={styles.label}>
                     What is the album description?
@@ -498,7 +498,7 @@ export default function BlankForm() {
                   />
                 </section>
               </Grid>
-              <Grid item md={12} lg={10}>
+              <Grid item item xs={12} md={12} lg={10}>
                 <label className={styles.label}>
                   What is the cover art for the album?
                 </label>
@@ -510,7 +510,7 @@ export default function BlankForm() {
                 </section>
               </Grid>
 
-              <Grid item md={12}>
+              <Grid item item xs={12} md={12}>
                 <section className={styles.section}>
                   <Button
                     className={styles.imageUploadButton}
@@ -534,7 +534,7 @@ export default function BlankForm() {
               </Grid>
             </Grid>
             <Grid container xs={12} md={11} lg={5}>
-              <Grid item md={12} lg={12}>
+              <Grid item item xs={12} md={12} lg={12}>
                 <section className={styles.section}>
                   <label className={styles.label}>
                     Who recorded the album?
@@ -556,7 +556,7 @@ export default function BlankForm() {
                   />
                 </section>
               </Grid>
-              <Grid item md={12} lg={12}>
+              <Grid item item xs={12} md={12} lg={12}>
                 <label className={styles.label}>
                   What are the songs available on the album?
                 </label>

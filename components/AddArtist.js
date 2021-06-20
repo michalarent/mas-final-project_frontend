@@ -107,9 +107,9 @@ export default function AddArtist({ handleClose }) {
     <ThemeProvider theme={theme}>
       <main className={styles.pageModal}>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.formModal}>
-          <Grid container>
-            <Grid container xs={12} md={12} lg={12}>
-              <Grid item md={8}>
+          <Grid container className={styles.formContainer}>
+            <Grid container className={styles.formContainer2} xs={12} md={12} lg={12}>
+              <Grid className={styles.formItem} item md={8}>
                 <section className={styles.section}>
                   <label className={styles.label}>
                     What is the artist's name?

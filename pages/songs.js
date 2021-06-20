@@ -17,11 +17,13 @@ import Navigation from "../components/Navigation";
 const SONGS_REST_API_URL = "http://localhost:8080/songs";
 const ARTISTS_REST_API_URL = "http://localhost:8080/artists";
 const PERFORMERS_REST_API_URL = "http://localhost:8080/performers";
+const ALBUMS_REST_API_URL = "http://localhost:8080/albums";
 
 export default function Songs() {
   const [hover, setHover] = useState([]);
   const [songs, setSongs] = useState([]);
   const [artists, setArtists] = useState([]);
+  const [albums, setAlbums] = useState([]);
   const [songArtistDict, setSongArtistDict] = useState([]);
   useEffect(() => {
     axios.get(SONGS_REST_API_URL).then((res) => setSongs(res.data));
@@ -86,7 +88,7 @@ export default function Songs() {
                     {item?.title}
                   </TableCell>
                   <TableCell style={{ maxWidth: "10rem" }} align="right">
-                    {item.plainAlbumDtoSet[0].title}
+                    {item.plainAlbumDtoSet[0]?.title}
                   </TableCell>
                   <TableCell align="right">
                     {getArtistForSong(item.plainAlbumDtoSet[0]?.id)}

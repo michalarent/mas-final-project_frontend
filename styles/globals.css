@@ -20,6 +20,11 @@ input[type="submit"] {
 }
 
 body {
+  background-color: rgba(0, 0, 0, 0.911) !important;
+
+}
+
+body {
   margin: 0;
 }
 

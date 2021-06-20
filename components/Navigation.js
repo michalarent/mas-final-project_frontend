@@ -20,6 +20,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import { NoSsr } from "@material-ui/core";
 import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
 import AlbumIcon from "@material-ui/icons/Album";
+import AddBox from "@material-ui/icons/AddBox";
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -167,16 +168,6 @@ export default function Navigation() {
               </Link>
             </ListItem>
 
-            <ListItem button key={"Songs"}>
-              <Link href="/songs">
-                <>
-                  <ListItemIcon onClick={() => router.push("/songs")}>
-                    <LibraryMusicIcon style={{ fill: "black" }} />
-                  </ListItemIcon>
-                  <ListItemText primary={"Songs"} />
-                </>
-              </Link>
-            </ListItem>
             <ListItem button key={"Artists"}>
               <Link href="/artists">
                 <>
@@ -189,6 +180,16 @@ export default function Navigation() {
             </ListItem>
           </List>
           <Divider style={{ backgroundColor: "black" }} />
+          <ListItem button key={"AddAlbum"}>
+            <Link href="/add-album">
+              <>
+                <ListItemIcon onClick={() => router.push("/new-album")}>
+                  <AddBox style={{ fill: "black" }} />
+                </ListItemIcon>
+                <ListItemText primary={"Add Album"} />
+              </>
+            </Link>
+          </ListItem>
         </Drawer>
       </div>
     </NoSsr>
